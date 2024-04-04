@@ -49,8 +49,16 @@ input {
 }
 
 .title {
+    color: var(--primary-light);
     text-align: center;
     font-size: 80px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 1rem;
+    text-shadow: 0 0.125rem 0 #f48e06;
+    text-transform: uppercase;
+
 }
 
 
@@ -167,6 +175,21 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 
+.github svg {
+    height: 40px;
+    width: 40px;
+    /* color: var(--primary-dark); */
+    /* font-size: 50px; */
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    bottom: 20px;
+}
+
+.github svg:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+
 /**Media queries*/
 
 @media(max-width: 1200px) {
@@ -199,7 +222,8 @@ input[type='range']::-webkit-slider-thumb {
     .title {
         font-size: 50px;
     }
-    .footer{
+
+    .footer {
         font-size: 15px;
     }
 
