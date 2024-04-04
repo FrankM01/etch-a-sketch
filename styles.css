@@ -19,8 +19,8 @@ html {
 }
 
 body {
-    background-color: var(--primary-light);
-    color: var(--primary-dark);
+    background: url(images/bg-blue.webp) no-repeat center center/cover;
+    color: var(--primary-light);
     font-family: Cascadia Code, sans-serif;
     line-height: 1.6;
     /* footer support */
@@ -77,11 +77,13 @@ button {
     padding: 10px 20px;
     border: 1px solid var(--primary-dark);
     border-radius: 7px;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
 }
 
 button.active {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
 }
 
 button,
@@ -111,12 +113,6 @@ input[type='color']::-webkit-color-swatch-wrapper {
     padding: 0;
 }
 
-input[type='color']::-webkit-color-swatch {
-    border: none;
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
 .size-value {
     margin-bottom: -20px;
     font-size: 20px;
@@ -130,7 +126,6 @@ input[type='range'] {
 input[type='range']::-webkit-slider-runnable-track {
     height: 10px;
     border: 1px solid var(--primary-dark);
-    border-radius: 25px;
     background-color: var(--secondary-light);
 
 }
